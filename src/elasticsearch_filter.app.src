@@ -1,0 +1,14 @@
+{application, elasticsearch_filter, [
+    {description, "em_filter lib to search Elasticsearch"},
+    {vsn, "0.1.0"},
+    {registered, []},
+    {applications, [
+        kernel,
+        stdlib,
+        em_filter
+    ]},
+    {env, []},
+    {modules, []},
+    {licenses, ["Apache-2.0"]},
+    {links, [{"GitHub", "https://github.com/EmergenceSystem/elasticsearch_filter"}]}
+]}.

@@ -1,0 +1,42 @@
+{
+  "clusters": [
+    {
+      "url": "https://my-cluster.es.example.com:9200",
+      "auth": {
+        "type": "api_key",
+        "key": "your_encoded_api_key_here"
+      },
+      "indices": [
+        {
+          "name": "articles",
+          "search_fields": ["title", "body", "tags"],
+          "url_field":     "url",
+          "title_field":   "title",
+          "resume_field":  "body"
+        },
+        {
+          "name": "logs",
+          "embryo_type":    "text",
+          "search_fields":  ["message", "service", "host"],
+          "content_field":  "message"
+        }
+      ]
+    },
+    {
+      "url": "http://localhost:9200",
+      "auth": {
+        "type": "basic",
+        "username": "elastic",
+        "password": "changeme"
+      },
+      "indices": [
+        {
+          "name": "my_index",
+          "search_fields": ["title", "content"]
+        }
+      ]
+    }
+  ],
+  "timeout": 10,
+  "result_size": 10
+}
