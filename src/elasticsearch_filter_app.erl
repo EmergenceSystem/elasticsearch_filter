@@ -5,7 +5,7 @@
 %%%
 %%%   em_filter:start_agent(my_agent, elasticsearch_filter_app, #{
 %%%       capabilities => elasticsearch_filter_app:base_capabilities()
-%%%                       ++ [<<"my_domain">>]
+%%%                       ++ ["mydomain"]
 %%%   })
 %%%
 %%% Config file: elastic_config.json (in working directory).
