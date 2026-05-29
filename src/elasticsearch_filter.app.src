@@ -1,6 +1,6 @@
 {application, elasticsearch_filter, [
     {description, "em_filter lib to search Elasticsearch"},
-    {vsn, "0.1.2"},
+    {vsn, "0.1.3"},
     {registered, []},
     {applications, [
         kernel,
